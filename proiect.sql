@@ -1,0 +1,156 @@
+-- Table: Angajat
+CREATE TABLE Angajat (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(50) NOT NULL,
+    prenume VARCHAR2(50) NOT NULL,
+    email VARCHAR2(50) NOT NULL,
+    id_manager NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_angajat_manager FOREIGN KEY (id_manager) REFERENCES Angajat(id)
+);
+
+-- Table: Companie
+CREATE TABLE Companie (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    id_manager NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_companie_manager FOREIGN KEY (id_manager) REFERENCES Angajat(id)
+);
+
+-- Table: Departament
+CREATE TABLE Departament (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    id_companie NUMBER NOT NULL,
+    id_manager NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_departament_companie FOREIGN KEY (id_companie) REFERENCES Companie(id),
+    CONSTRAINT fk_departament_manager FOREIGN KEY (id_manager) REFERENCES Angajat(id)
+);
+
+-- Table: Divizie
+CREATE TABLE Divizie (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    id_departament NUMBER NOT NULL,
+    id_manager NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_divizie_departament FOREIGN KEY (id_departament) REFERENCES Departament(id),
+    CONSTRAINT fk_divizie_manager FOREIGN KEY (id_manager) REFERENCES Angajat(id)
+);
+
+-- Table: Centru_de_Cost
+CREATE TABLE Centru_de_Cost (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    id_divizie NUMBER NOT NULL,
+    id_manager NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_centru_cost_divizie FOREIGN KEY (id_divizie) REFERENCES Divizie(id),
+    CONSTRAINT fk_centru_cost_manager FOREIGN KEY (id_manager) REFERENCES Angajat(id)
+);
+
+-- Table: Angajat_Centru_De_Cost
+CREATE TABLE Angajat_Centru_De_Cost (
+    id_angajat NUMBER NOT NULL,
+    id_centru_de_cost NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    PRIMARY KEY (id_angajat, id_centru_de_cost),
+    CONSTRAINT fk_angajat_cdc_angajat FOREIGN KEY (id_angajat) REFERENCES Angajat(id),
+    CONSTRAINT fk_angajat_cdc_centru FOREIGN KEY (id_centru_de_cost) REFERENCES Centru_de_Cost(id)
+);
+
+-- Table: Inventar
+CREATE TABLE Inventar (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    descriere VARCHAR2(200),
+    id_companie NUMBER NOT NULL,
+    data_incepere DATE NOT NULL,
+    data_finalizare DATE NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_inventar_companie FOREIGN KEY (id_companie) REFERENCES Companie(id)
+);
+
+-- Table: Mijloc_fix
+CREATE TABLE Mijloc_fix (
+    id NUMBER PRIMARY KEY,
+    cod VARCHAR2(50) NOT NULL,
+    nume VARCHAR2(200),
+    valoare NUMBER(12, 2),
+    data_achizitionare DATE NOT NULL,
+    id_centru_de_cost NUMBER NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    CONSTRAINT fk_mijloc_fix_centru FOREIGN KEY (id_centru_de_cost) REFERENCES Centru_de_Cost(id)
+);
+
+-- Table: Mijloc_fix_inventar
+CREATE TABLE Mijloc_fix_inventar (
+    id_inventar NUMBER NOT NULL,
+    id_mijloc_fix NUMBER NOT NULL,
+    id_centru_de_cost_initial NUMBER NOT NULL,
+    id_centru_de_cost_final NUMBER,
+    cantitate_initiala NUMBER(12, 2) NOT NULL,
+    cantitate_finala NUMBER(12, 2),
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL,
+    PRIMARY KEY (id_inventar, id_mijloc_fix),
+    CONSTRAINT fk_mfi_inventar FOREIGN KEY (id_inventar) REFERENCES Inventar(id),
+    CONSTRAINT fk_mfi_mijloc_fix FOREIGN KEY (id_mijloc_fix) REFERENCES Mijloc_fix(id),
+    CONSTRAINT fk_mfi_centru_initial FOREIGN KEY (id_centru_de_cost_initial) REFERENCES Centru_de_Cost(id),
+    CONSTRAINT fk_mfi_centru_final FOREIGN KEY (id_centru_de_cost_final) REFERENCES Centru_de_Cost(id)
+);
+
+-- Table: tip_entitate
+CREATE TABLE tip_entitate (
+    id NUMBER PRIMARY KEY,
+    nume_tabela VARCHAR2(50) NOT NULL,
+    ultima_valoare VARCHAR2(50) NOT NULL,
+    creat_la DATE,
+    creat_de VARCHAR2(100),
+    modificat_la DATE,
+    modificat_de VARCHAR2(100),
+    sters NUMBER(1) DEFAULT 0 NOT NULL
+);
