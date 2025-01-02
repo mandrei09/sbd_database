@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/inserts/angajat.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/companie.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/tables.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/test.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_ANGAJAT_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_ANGAJAT_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_ANGAJAT_CENTRU_DE_COST_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_ANGAJAT_CENTRU_DE_COST_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_CENTRU_DE_COST_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_CENTRU_DE_COST_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_COMPANIE_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_COMPANIE_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_DEPARTAMENT_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_DEPARTAMENT_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_DIVIZIE_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_DIVIZIE_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_INVENTAR_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_INVENTAR_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_MIJLOC_FIX_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_MIJLOC_FIX_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_MIJLOC_FIX_INVENTAR_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_MIJLOC_FIX_INVENTAR_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_TIP_ENTITATE_BEFORE_INSERT.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/triggers/TRG_TIP_ENTITATE_BEFORE_UPDATE.sql" dialect="Oracle" />
+  </component>
+</project>

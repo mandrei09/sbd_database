@@ -1,0 +1,17 @@
+CREATE OR REPLACE TRIGGER TRG_ANGAJAT_BEFORE_UPDATE
+BEFORE UPDATE ON ANGAJAT
+FOR EACH ROW
+DECLARE
+    dbUser VARCHAR2(20);
+BEGIN
+
+    SELECT User INTO dbUser FROM dual;
+
+    :NEW.modificat_de := dbUser;
+    :NEW.modificat_la := SYSDATE;
+
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Error in trg_angajat_update: ' || SQLERRM);
+END;
+/
