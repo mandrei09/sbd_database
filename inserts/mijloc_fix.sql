@@ -1,0 +1,21 @@
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Laptop Lenovo ThinkPad', 4500.00, TO_DATE('2020-05-15', 'YYYY-MM-DD'), 1);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Birou Lemn Masiv', 1500.50, TO_DATE('2015-03-20', 'YYYY-MM-DD'), 2);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Scaun Ergonomic', 750.00, TO_DATE('2022-01-10', 'YYYY-MM-DD'), 3);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Imprimantă Laser HP', 2000.00, TO_DATE('2018-06-25', 'YYYY-MM-DD'), 4);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Proiector Epson', 3200.75, TO_DATE('2019-11-30', 'YYYY-MM-DD'), 5);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Aparat Aer Condiționat', 2500.00, TO_DATE('2021-07-15', 'YYYY-MM-DD'), 7);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Server Dell PowerEdge', 15000.00, TO_DATE('2017-02-12', 'YYYY-MM-DD'), 9);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Frigider Arctic', 1200.00, TO_DATE('2016-10-01', 'YYYY-MM-DD'), 10);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Mașină de Spălat Indesit', 1800.00, TO_DATE('2013-09-22', 'YYYY-MM-DD'), 11);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Televizor LG OLED', 4500.00, TO_DATE('2023-05-03', 'YYYY-MM-DD'), 12);
+
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Telefon iPhone 13', 3800.00, TO_DATE('2021-11-10', 'YYYY-MM-DD'), 13);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Cameră Video Sony', 5200.00, TO_DATE('2020-08-20', 'YYYY-MM-DD'), 14);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Cuptor Electric Bosch', 2000.00, TO_DATE('2019-12-10', 'YYYY-MM-DD'), 15);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Laptop MacBook Pro', 7500.00, TO_DATE('2018-05-22', 'YYYY-MM-DD'), 16);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Aspirator Dyson', 2200.00, TO_DATE('2017-03-18', 'YYYY-MM-DD'), 17);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Tabletă Samsung Galaxy', 1500.00, TO_DATE('2016-09-25', 'YYYY-MM-DD'), 18);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Cameră de Supraveghere Hikvision', 800.00, TO_DATE('2015-06-11', 'YYYY-MM-DD'), 19);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Monitor Dell Ultrasharp', 2100.00, TO_DATE('2022-02-28', 'YYYY-MM-DD'), 20);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Router Cisco', 3500.00, TO_DATE('2023-03-07', 'YYYY-MM-DD'), 21);
+INSERT INTO Mijloc_fix (nume, valoare, data_achizitionare, id_centru_de_cost) VALUES ('Centrala Termică Ariston', 4000.00, TO_DATE('2024-01-15', 'YYYY-MM-DD'), 22);
