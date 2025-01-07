@@ -2,7 +2,23 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/inserts/angajat.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/angajat_centru_de_cost.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/centru_de_cost.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/inserts/companie.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/departament.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/divizie.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/inventar.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/mijloc_fix.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/inserts/mijloc_fix_inventar.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/1.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/2.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/3.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/4.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/5.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/6.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/7.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/8.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/9.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/tables.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/test.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/triggers/TRG_ANGAJAT_BEFORE_INSERT.sql" dialect="Oracle" />

@@ -13,6 +13,7 @@ BEGIN
     SELECT USER INTO dbUser FROM dual;
 
     :NEW.creat_de := dbUser;
+    :NEW.modificat_de := dbUser;
     :NEW.cod := 'INV-' || lastCode;
     :NEW.nume := TRIM(:NEW.nume);
     :NEW.info := TRIM(:NEW.info);

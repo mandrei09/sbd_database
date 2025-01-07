@@ -7,6 +7,7 @@ BEGIN
     SELECT USER INTO dbUser FROM dual;
 
     :NEW.creat_de := dbUser;
+    :NEW.modificat_de := dbUser;
     :NEW.creat_la := SYSDATE;
 END;
 /

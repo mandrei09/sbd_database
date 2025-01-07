@@ -8,5 +8,7 @@ BEGIN
 
     :NEW.creat_de := dbUser;
     :NEW.creat_la := SYSDATE;
+
+    :NEW.modificat_de := dbUser;
 END;
 /

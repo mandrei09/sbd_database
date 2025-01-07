@@ -14,6 +14,7 @@ BEGIN
     SELECT User INTO dbUser FROM dual;
 
     :NEW.CREAT_DE := dbUser;
+    :NEW.modificat_de := dbUser;
     :NEW.COD := 'CMP-' || lastCode;
     :NEW.NUME := TRIM(:NEW.NUME);
 

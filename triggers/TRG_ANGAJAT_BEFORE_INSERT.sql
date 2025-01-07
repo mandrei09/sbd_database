@@ -15,6 +15,7 @@ BEGIN
     SELECT User INTO dbUser FROM dual;
 
     :NEW.creat_de := dbUser;
+    :NEW.modificat_de := dbUser;
 
     :NEW.COD := 'ANGJ-' || lastCode;
 
