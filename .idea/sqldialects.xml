@@ -11,6 +11,12 @@
     <file url="file://$PROJECT_DIR$/inserts/mijloc_fix.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/inserts/mijloc_fix_inventar.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/1.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/10.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/11.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/12.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/13.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/14.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/queries/15.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/2.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/3.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/4.sql" dialect="Oracle" />

@@ -12,3 +12,6 @@ VALUES ('Inventar Materiale Consumabile', 44, TO_DATE('2025-06-01', 'YYYY-MM-DD'
 
 INSERT INTO Inventar (nume, id_companie, data_incepere, data_finalizare)
 VALUES ('Inventar Stocuri 2025', 45, TO_DATE('2025-07-01', 'YYYY-MM-DD'), TO_DATE('2025-07-10', 'YYYY-MM-DD'));
+
+INSERT INTO Inventar (nume, id_companie, data_incepere, data_finalizare)
+VALUES ('Inventar Stocuri 2026', 61, TO_DATE('2026-01-01', 'YYYY-MM-DD'), TO_DATE('2026-01-05', 'YYYY-MM-DD'));

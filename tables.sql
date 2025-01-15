@@ -154,3 +154,12 @@ CREATE TABLE Tip_entitate (
     modificat_de VARCHAR2(100),
     sters NUMBER(1) DEFAULT 0 NOT NULL
 );
+
+CREATE TABLE Mesaje (
+    cod_mesaj NUMBER PRIMARY KEY,
+    mesaj VARCHAR2(255),
+    tip_mesaj VARCHAR2(1) CHECK (tip_mesaj IN ('E', 'W', 'I')),
+    creat_de VARCHAR2(40) NOT NULL,
+    creat_la DATE NOT NULL
+);
+
