@@ -96,6 +96,7 @@ CREATE TABLE Inventar (
     cod VARCHAR2(50) NOT NULL,
     nume VARCHAR2(200),
     info VARCHAR2(1000),
+    valoare_pierduta NUMBER(12,2) DEFAULT 0.0,
     id_companie NUMBER NOT NULL,
     data_incepere DATE NOT NULL,
     data_finalizare DATE NOT NULL,
@@ -162,4 +163,3 @@ CREATE TABLE Mesaje (
     creat_de VARCHAR2(40) NOT NULL,
     creat_la DATE NOT NULL
 );
-

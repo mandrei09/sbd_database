@@ -10,6 +10,8 @@
     <file url="file://$PROJECT_DIR$/inserts/inventar.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/inserts/mijloc_fix.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/inserts/mijloc_fix_inventar.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/procedures/9_1.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/procedures/insert_mesaj.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/1.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/10.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/queries/11.sql" dialect="Oracle" />
@@ -47,5 +49,6 @@
     <file url="file://$PROJECT_DIR$/triggers/TRG_MIJLOC_FIX_INVENTAR_BEFORE_UPDATE.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/triggers/TRG_TIP_ENTITATE_BEFORE_INSERT.sql" dialect="Oracle" />
     <file url="file://$PROJECT_DIR$/triggers/TRG_TIP_ENTITATE_BEFORE_UPDATE.sql" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$/types/message_type.sql" dialect="Oracle" />
   </component>
 </project>
