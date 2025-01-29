@@ -18,8 +18,4 @@ INSERT INTO Angajat (nume, prenume, id_manager) VALUES ('Popa', 'Elena', 42);
 INSERT INTO Angajat (nume, prenume, id_manager) VALUES ('Munteanu', 'Diana', 41);
 INSERT INTO Angajat (nume, prenume, id_manager) VALUES ('Cojocaru', 'Lucia', 42);
 INSERT INTO Angajat (nume, prenume, id_manager) VALUES ('Negoita', 'Gabriel', 42);
-
-select * from ANGAJAT;
-select * from TIP_ENTITATE
-
-SELECT USER FROM DUAL;
+INSERT INTO Angajat (nume, prenume, id_manager) VALUES ('NSP', 'NSP', NULL);

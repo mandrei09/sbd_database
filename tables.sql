@@ -163,3 +163,6 @@ CREATE TABLE Mesaje (
     creat_de VARCHAR2(40) NOT NULL,
     creat_la DATE NOT NULL
 );
+
+select * from ANGAJAT
+
